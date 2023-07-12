@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/react-homework-template/static/css/main.7acaea2f.css",
-    "main.js": "/react-homework-template/static/js/main.4ae15214.js",
-    "static/js/721.1725ed81.chunk.js": "/react-homework-template/static/js/721.1725ed81.chunk.js",
-    "index.html": "/react-homework-template/index.html",
-    "main.7acaea2f.css.map": "/react-homework-template/static/css/main.7acaea2f.css.map",
-    "main.4ae15214.js.map": "/react-homework-template/static/js/main.4ae15214.js.map",
-    "721.1725ed81.chunk.js.map": "/react-homework-template/static/js/721.1725ed81.chunk.js.map"
+    "main.css": "/tweets_card/static/css/main.a30b4c72.css",
+    "main.js": "/tweets_card/static/js/main.31c9ea65.js",
+    "static/css/540.41cb173f.chunk.css": "/tweets_card/static/css/540.41cb173f.chunk.css",
+    "static/js/540.21e5db83.chunk.js": "/tweets_card/static/js/540.21e5db83.chunk.js",
+    "static/media/bgCard.png": "/tweets_card/static/media/bgCard.010ab3c33bc13f300d33.png",
+    "static/media/logo.svg": "/tweets_card/static/media/logo.eb74a9cfcc8c2946c8be.svg",
+    "static/media/elips.svg": "/tweets_card/static/media/elips.77f9a8484aa5bbe7fb8d.svg",
+    "static/media/line.svg": "/tweets_card/static/media/line.3dc889ed819cc56238bc.svg",
+    "index.html": "/tweets_card/index.html",
+    "main.a30b4c72.css.map": "/tweets_card/static/css/main.a30b4c72.css.map",
+    "main.31c9ea65.js.map": "/tweets_card/static/js/main.31c9ea65.js.map",
+    "540.41cb173f.chunk.css.map": "/tweets_card/static/css/540.41cb173f.chunk.css.map",
+    "540.21e5db83.chunk.js.map": "/tweets_card/static/js/540.21e5db83.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.4ae15214.js"
+    "static/css/main.a30b4c72.css",
+    "static/js/main.31c9ea65.js"
   ]
 }
