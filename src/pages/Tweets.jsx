@@ -1,7 +1,9 @@
-
+import { Card } from "components/Card/Card";
 
 const Tweets = () => {
-    return <>ffff </>;
+    return <>
+    <Card></Card>
+    </>;
 };
 
 export default Tweets;
