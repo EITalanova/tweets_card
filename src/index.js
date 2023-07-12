@@ -7,15 +7,15 @@ import { persistor } from 'redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
 import { App } from 'App';
 
-import './index.css';
+import './css/index.scss';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename='/tweets_card'>
+        <BrowserRouter basename="/tweets_card">
           <App />
-          </BrowserRouter>
+        </BrowserRouter>
       </PersistGate>
     </Provider>
   </React.StrictMode>
