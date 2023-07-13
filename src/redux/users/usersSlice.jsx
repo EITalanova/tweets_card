@@ -3,6 +3,7 @@ import { fetchUsers, updateUser } from './usersThunk';
 
 const initialState = {
   users: [],
+  filter: 'show all',
   page: 1,
   isLoading: false,
 };
@@ -14,6 +15,9 @@ const usersSlice = createSlice({
     increasePage: state => {
       state.page += 1;
     },
+    setFilter: (state, { payload }) => {
+      state.filter = payload;
+    },
   },
   extraReducers: builder =>
     builder
@@ -24,9 +28,7 @@ const usersSlice = createSlice({
         const newData = payload.data.filter(
           user => !state.users.some(u => u.id === user.id)
         );
-
         state.users.push(...newData);
-        console.log(payload.data);
         state.isLoading = false;
       })
       .addCase(fetchUsers.rejected, (state, { payload }) => {
@@ -47,4 +49,4 @@ const usersSlice = createSlice({
 });
 
 export const usersReducer = usersSlice.reducer;
-export const { increasePage } = usersSlice.actions;
+export const { increasePage, setFilter } = usersSlice.actions;

@@ -1,3 +1,5 @@
+@import './variables';
+
 html {
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
@@ -17,7 +19,6 @@ html {
 
 body {
   position: relative;
-
   min-height: 100vh;
   overflow: hidden;
   margin: 0;
@@ -55,9 +56,13 @@ a {
 
 button {
   cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
 }
 
-// .active {
-//   color: $accentColor;
-
-// }
+button:hover,
+a:hover,
+button:focus,
+a:focus {
+  color: $mainDarkColor;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}

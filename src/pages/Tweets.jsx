@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 import { CardList } from 'components/CardList/CardList';
 import { ButtonNav } from 'components/ButtonNav/ButtonNav';
+import { Filter } from 'components/Filter/Filter';
 import { Pagination } from 'components/Pagination/Pagination';
 
 import style from './style/Tweets.module.scss';
@@ -14,6 +15,7 @@ const Tweets = () => {
   return (
     <div className={style.tweetsContainer}>
       <ButtonNav path="/" text="Back" />
+      <Filter />
       <CardList />
       {showPagination && <Pagination />}
     </div>

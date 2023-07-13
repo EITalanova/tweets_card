@@ -3,5 +3,6 @@
   background-image: url(../../assets/images/bgHome6.png);
   background-size: cover;
   justify-content: center;
+  align-items: center;
   padding: 30px 30px;
 }

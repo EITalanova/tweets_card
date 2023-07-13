@@ -1,0 +1,13 @@
+@import '../../css/_variables.scss';
+
+.filter {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: $mainLightColor;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.filterOption {
+  background-position: left 0.7em top 50%, 0 0;
+}
