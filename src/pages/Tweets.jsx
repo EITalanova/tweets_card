@@ -1,5 +1,5 @@
-import { selectPage } from 'redux/users/usersSelector';
 import { useSelector } from 'react-redux';
+import { selectPage } from 'redux/users/usersSelector';
 
 import { CardList } from 'components/CardList/CardList';
 import { ButtonNav } from 'components/ButtonNav/ButtonNav';
@@ -9,8 +9,12 @@ import { Pagination } from 'components/Pagination/Pagination';
 import style from './style/Tweets.module.scss';
 
 const Tweets = () => {
+  const limitCards = 12;
+  const limitCardsPage = 3;
+
   const page = useSelector(selectPage);
-  const showPagination = page < 4;
+
+  const showPagination = page < limitCards / limitCardsPage;
 
   return (
     <div className={style.tweetsContainer}>

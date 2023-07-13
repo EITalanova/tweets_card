@@ -33,6 +33,10 @@ export const CardList = () => {
       filteredUsers = users.filter(user => !user.isFollow);
       break;
 
+    case 'show all':
+      filteredUsers = users;
+      break;
+    
     default:
       filteredUsers = users;
   }

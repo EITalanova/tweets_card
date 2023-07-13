@@ -1,10 +1,12 @@
 import cn from 'classnames';
 
-
 import { useDispatch } from 'react-redux';
-
 import { updateUser } from 'redux/users/usersThunk';
 import { handleNumber } from 'utils/handleNumber';
+
+import { ReactComponent as Elips } from '../../assets/svg/elips.svg';
+import { ReactComponent as Line } from '../../assets/svg/line.svg';
+
 
 import style from './Card.module.scss';
 
@@ -26,6 +28,8 @@ export const Card = ({ user }) => {
   return (
     <div className={style.card}>
       <div className={style.cardContent}>
+        <Line className={style.imgLine} />
+        <Elips className={style.imgElips}/>
         <img className={style.cardAvatar} src={avatar} alt="avatar" />
         <div className={style.cardText}>
           <p className={style.cardTweeets}>{`${tweets} tweets`}</p>

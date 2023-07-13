@@ -1,6 +1,7 @@
 @import '../../css/_variables.scss';
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -19,7 +20,6 @@
 }
 
 .cardContent {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,26 +31,20 @@
   width: 62px;
   height: 62px;
   border-radius: 62px;
+  margin-bottom: 4px;
 }
 
-.cardAvatar::before {
+.imgLine {
   position: absolute;
-  content: '';
-  background-image: url(../../assets/svg/line.svg);
+  top: 214px;
+  z-index: 0;
 }
 
-.cardAvatar::after {
+.imgElips {
   position: absolute;
-  content: '';
-  background-image: url(../../assets/svg/elips.svg);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  background-size: cover;
+  top: 178px;
+  width: 90px;
+  height: 90px;
 }
 
 .cardText {
