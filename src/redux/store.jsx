@@ -10,7 +10,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
-import { usersReducer } from './usersSlice';
+import { usersReducer } from './users/usersSlice';
 
 const middleware = [
   ...getDefaultMiddleware({

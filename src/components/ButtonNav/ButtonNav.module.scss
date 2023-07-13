@@ -1,0 +1,16 @@
+@import '../../css/variables';
+
+.btn {
+  text-align: center;
+  padding: 24px 44px;
+
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 10px;
+  color: $darkTextColor;
+  background-color: $accentBtnColor;
+  box-shadow: 0 0 20px rgba(33, 32, 32, 0.5);
+}

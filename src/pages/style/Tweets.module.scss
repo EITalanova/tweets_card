@@ -1,0 +1,7 @@
+@import '../../css/_mixins.scss';
+
+.tweetsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

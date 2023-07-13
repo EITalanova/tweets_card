@@ -1,19 +1,47 @@
-import { Button } from 'components/Button/Button';
+import cn from 'classnames';
 
 
-import style from './Card.module.css';
+import { useDispatch } from 'react-redux';
 
-export const Card = ({user}) => {
-  const { avatar, tweets, followers } = user;
+import { updateUser } from 'redux/users/usersThunk';
+import { handleNumber } from 'utils/handleNumber';
+
+import style from './Card.module.scss';
+
+export const Card = ({ user }) => {
+  const { id, isFollow, avatar, tweets, followers } = user;
+  const dispatch = useDispatch();
+  const setFollowers = isFollow ? followers - 1 : followers + 1;
+  const setIsFollow = !isFollow;
+
+  const handleFollowers = () => {
+    dispatch(
+      updateUser({
+        id,
+        updateData: { followers: setFollowers, isFollow: setIsFollow },
+      })
+    );
+  };
+
   return (
     <div className={style.card}>
       <div className={style.cardContent}>
         <img className={style.cardAvatar} src={avatar} alt="avatar" />
         <div className={style.cardText}>
           <p className={style.cardTweeets}>{`${tweets} tweets`}</p>
-          <p className={style.cardFollowers}>{`${followers} followers`}</p>
+          <p className={style.cardFollowers}>{`${handleNumber(
+            followers
+          )} followers`}</p>
         </div>
-        <Button text='Follow'/>
+        <button
+          className={cn(
+            style.btn,
+            !setIsFollow ? style.btnActive : style.btnNotActive
+          )}
+          onClick={handleFollowers}
+        >
+          {!setIsFollow ? 'Following' : 'Follow'}
+        </button>
       </div>
     </div>
   );
