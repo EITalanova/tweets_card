@@ -27,7 +27,7 @@ const usersPersistConfig = {
 
 export const store = configureStore({
   reducer: {
-    users: persistReducer(usersPersistConfig, usersReducer)
+    users: persistReducer(usersPersistConfig, usersReducer),
   },
   middleware,
 });

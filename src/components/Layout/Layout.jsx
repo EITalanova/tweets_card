@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-import style from './Layout.module.css';
+import style from './Layout.module.scss';
 
 export const Layuot = () => {
   return (

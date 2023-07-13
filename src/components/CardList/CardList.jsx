@@ -1,17 +1,16 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import {
   selectPage,
   selectUsers,
   selectFilter,
 } from 'redux/users/usersSelector';
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { useSelector } from 'react-redux';
-
 import { fetchUsers } from 'redux/users/usersThunk';
 
 import { Card } from 'components/Card/Card';
 
-import style from './CardList.module.css';
+import style from './CardList.module.scss';
 
 export const CardList = () => {
   const dispatch = useDispatch();
@@ -33,7 +32,7 @@ export const CardList = () => {
     case 'follow':
       filteredUsers = users.filter(user => !user.isFollow);
       break;
-    
+
     default:
       filteredUsers = users;
   }

@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+
 import { increasePage } from 'redux/users/usersSlice';
 
 import { ButtonNav } from 'components/ButtonNav/ButtonNav';
@@ -9,7 +10,5 @@ export const Pagination = () => {
     dispatch(increasePage());
   };
 
-  return (
-    <ButtonNav onClick={handleLoadMore} text="Load more" />
-  );
+  return <ButtonNav onClick={handleLoadMore} text="Load more" />;
 };

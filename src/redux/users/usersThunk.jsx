@@ -19,8 +19,8 @@ export const updateUser = createAsyncThunk(
   'user/updateUser',
   async ({ id, updateData }, thunkAPI) => {
     try {
-      const res = await axios.put(`/user/${id}`, updateData)
-     return res.data;
+      const res = await axios.put(`/user/${id}`, updateData);
+      return res.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
