@@ -6,8 +6,8 @@ The project was carried out on the basis **Create React App** </br>
 - Go into folder: cd tweets_card
 - Install dependencies: npm install
 - Start the app: npm start
+- Page to view in a browser: http://localhost:3000
 - Tweet away!
-**Page** to view in a browser: http://localhost:3000</br>
 
 **The following technologies were used:**
 - React
