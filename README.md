@@ -1,5 +1,8 @@
 # **project Tweets**
 
+
+The application is implemented to be able to work with tweet cards. Allows you to go from the main page to the page where the full list of cards is located, initially displayed in 3 pieces and with the ability to download even more for easier viewing, Includes the ability to filter by added / not added cards. After familiarization, it is possible to add a card to your list by clicking the "Follow" button and also remove a card from the list by clicking the "Following" button. Navigation is also implemented for the ability to move from page to page. The site is responsive and can be used on multiple devices.</br>
+
 The project was carried out on the basis **Create React App** </br>
 **Command to run:** 
 - Clone the repo
@@ -16,6 +19,4 @@ The project was carried out on the basis **Create React App** </br>
 - Redux
 - SCSS/SASS
 
-**Layout design:** [https://www.figma.com/file/inQl6Jm41xikjUwfDGJsdq/OMNIC_test-(Ukraine)?node-id=0%3A1&mode=dev](https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=832%3A7&mode=dev)
-
-The site is designed to view available user cards, the ability to filter, the ability to follow
+**Layout design:** [[https://www.figma.com/file/inQl6Jm41xikjUwfDGJsdq/OMNIC_test-(Ukraine)?node-id=0%3A1&mode=dev](https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=832%3A7&mode=dev)](https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=832%3A7&mode=dev)https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=832%3A7&mode=dev
