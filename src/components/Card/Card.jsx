@@ -7,7 +7,6 @@ import { handleNumber } from 'utils/handleNumber';
 import { ReactComponent as Elips } from '../../assets/svg/elips.svg';
 import { ReactComponent as Line } from '../../assets/svg/line.svg';
 
-
 import style from './Card.module.scss';
 
 export const Card = ({ user }) => {
@@ -26,10 +25,10 @@ export const Card = ({ user }) => {
   };
 
   return (
-    <div className={style.card}>
+    <li className={style.card}>
       <div className={style.cardContent}>
         <Line className={style.imgLine} />
-        <Elips className={style.imgElips}/>
+        <Elips className={style.imgElips} />
         <img className={style.cardAvatar} src={avatar} alt="avatar" />
         <div className={style.cardText}>
           <p className={style.cardTweeets}>{`${tweets} tweets`}</p>
@@ -47,6 +46,6 @@ export const Card = ({ user }) => {
           {!setIsFollow ? 'Following' : 'Follow'}
         </button>
       </div>
-    </div>
+    </li>
   );
 };
