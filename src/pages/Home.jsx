@@ -1,4 +1,4 @@
-import { ButtonNav } from 'components/ButtonNav/ButtonNav';
+import { ButtonNav } from '../components/ButtonNav/ButtonNav';
 
 import style from './style/Home.module.scss';
 

@@ -1,8 +1,8 @@
 import { useDispatch } from 'react-redux';
 
-import { increasePage } from 'redux/users/usersSlice';
+import { increasePage } from '../../redux/users/usersSlice';
 
-import { ButtonNav } from 'components/ButtonNav/ButtonNav';
+import { ButtonNav } from '../ButtonNav/ButtonNav';
 
 export const Pagination = () => {
   const dispatch = useDispatch();

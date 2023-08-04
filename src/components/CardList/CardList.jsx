@@ -1,14 +1,16 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+
+
 import {
   selectPage,
   selectUsers,
   selectFilter,
-} from 'redux/users/usersSelector';
-import { fetchUsers } from 'redux/users/usersThunk';
+} from '../../redux/users/usersSelector';
+import { fetchUsers } from '../../redux/users/usersThunk';
 
-import { Card } from 'components/Card/Card';
+import { Card } from '../Card/Card';
 
 import style from './CardList.module.scss';
 

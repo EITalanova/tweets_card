@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
-import { selectPage } from 'redux/users/usersSelector';
+import { selectPage } from '../redux/users/usersSelector';
 
-import { CardList } from 'components/CardList/CardList';
-import { ButtonNav } from 'components/ButtonNav/ButtonNav';
-import { Filter } from 'components/Filter/Filter';
-import { Pagination } from 'components/Pagination/Pagination';
+import { CardList } from '../components/CardList/CardList';
+import { ButtonNav } from '../components/ButtonNav/ButtonNav';
+import { Filter } from '../components/Filter/Filter';
+import { Pagination } from '../components/Pagination/Pagination';
 
 import style from './style/Tweets.module.scss';
 

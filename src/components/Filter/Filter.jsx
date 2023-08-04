@@ -1,9 +1,9 @@
 import { useDispatch } from 'react-redux';
 
-import { selectFilter } from 'redux/users/usersSelector';
+import { selectFilter } from '../../redux/users/usersSelector';
 import { useSelector } from 'react-redux';
 
-import { setFilter } from 'redux/users/usersSlice';
+import { setFilter } from '../../redux/users/usersSlice';
 
 import style from './Filter.module.scss';
 

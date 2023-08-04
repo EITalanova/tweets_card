@@ -1,8 +1,8 @@
 import cn from 'classnames';
 
 import { useDispatch } from 'react-redux';
-import { updateUser } from 'redux/users/usersThunk';
-import { handleNumber } from 'utils/handleNumber';
+import { updateUser } from '../../redux/users/usersThunk';
+import { handleNumber } from '../../utils/handleNumber';
 
 import { ReactComponent as Elips } from '../../assets/svg/elips.svg';
 import { ReactComponent as Line } from '../../assets/svg/line.svg';
