@@ -5,12 +5,12 @@ The application is implemented to be able to work with tweet cards. Allows you t
 
 **The following technologies were used:**
 - React
+- Redux
 - REST API
 - JavaScript(ES6)
-- Redux
 - SCSS/SASS
 
-**Layout design:** (https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=832%3A7&mode=dev)https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=832%3A7&mode=dev </br>
+**Layout design:** https://www.figma.com/file/zun1oP6NmS2Lmgbcj6e1IG/Test?node-id=832%3A7&mode=dev </br>
 
 The project was carried out on the basis **Create React App** </br>
 **Command to run:** 
